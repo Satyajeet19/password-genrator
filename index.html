@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Password Generator Tool</title>
+  </head>
+  <body>
+    <div class="generator-container">
+      <h1>Password Generator</h1>
+
+      <div class="password-display">
+        <input type="text" class="password-box" id="passwordBox" disabled />
+        <span class="material-icons" id="copyButton">COPY</span>
+      </div>
+
+      <input type="range" min="1" max="30" value="8" id="passwordLengthSlider" />
+
+      <div class="slider-info">
+        <p>Password Length:</p>
+        <span id="sliderValue">8</span>
+      </div>
+
+      <div class="options">
+        <label><input type="checkbox" id="includeLowercase" checked /> Lowercase Letters (a-z)</label>
+        <label><input type="checkbox" id="includeUppercase" checked /> Uppercase Letters (A-Z)</label>
+        <label><input type="checkbox" id="includeNumbers" checked /> Numbers (0-9)</label>
+        <label><input type="checkbox" id="includeSymbols" checked /> Symbols (@-*)</label>
+      </div>
+
+      <button type="button" class="generate-button" id="generateButton">
+        Generate Password
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
