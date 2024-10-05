@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right bottom, #ff9a8b, #ff6a6a);
+    color: #fff;
+    font-weight: 600;
+}
+
+.generator-container {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.generator-container h1 {
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+}
+
+.password-display {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.password-display span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #000;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.password-box {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    text-overflow: ellipsis;
+    background-color: #fff;
+    color: #000;
+}
+
+.slider-info {
+    margin: 16px 0;
+}
+
+.slider-info p {
+    font-size: 16px;
+}
+
+.slider-info span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.options {
+    margin: 16px 0;
+}
+
+.options label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.options input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.generate-button {
+    border: none;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.generate-button:hover {
+    background-color: #2980b9;
+}
